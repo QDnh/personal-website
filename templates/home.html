@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>My List</h1>
+    <p>You have {{ mylist|length }} items.</p>
+
+    <ul>
+    {% for myitem in mylist %}
+        <li>
+            {{ myitem.title }}
+            {% if myitem.done %}
+                Completed
+            {% else %}
+                In progress
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
