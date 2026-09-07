@@ -9,8 +9,8 @@
     <ul>
     {% for myitem in mylist %}
         <li>
-            {{ myitem.title }}
-            {% if myitem.done %}
+            {{ myitem.name }}
+            {% if myitem.completed %}
                 Completed
             {% else %}
                 In progress

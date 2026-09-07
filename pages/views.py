@@ -1,11 +1,11 @@
 from django.shortcuts import render
 
 mylist = [
-    {"title": "Buy groceries", "done": True},
-    {"title": "Get gas", "done": True},
-    {"title": "Mow lawn", "done": False},
-    {"title": "Work on project", "done": True},
-    {"title": "Take quiz", "done": False},
+    {"name": "Buy groceries", "completed": True},
+    {"name": "Get gas", "completed": True},
+    {"name": "Mow lawn", "completed": False},
+    {"name": "Work on project", "completed": True},
+    {"name": "Take quiz", "completed": False},
 ]
 
 
