@@ -1,8 +1,6 @@
-<html>
-<head>
-    <title>Home</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
     <h1>My List</h1>
     <p>You have {{ mylist|length }} items.</p>
 
@@ -18,5 +16,4 @@
         </li>
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock content %}
